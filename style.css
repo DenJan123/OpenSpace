@@ -34,11 +34,11 @@ body {
     z-index: 2;
 }
 
-.control-panel {
+.control-panel__inner {
     position: absolute;
     right:120px;
     bottom: 200px;
-    height: 20%;
+    height: 25%;
     width: 30%;
     padding: 15px;
     background: linear-gradient(#d3d3d3, #2d3436);
@@ -51,17 +51,33 @@ body {
 
 [value="Launch"] {
     margin: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 4px;
+    min-width: 100px;
+    border: 0px;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+    background: #f65f51;
+    color: #ffffff;
+    border-radius: 10px;
+}
+[value="Launch"]:hover {
+    background: #c0392b;
+    color: #ffffff;
 }
 
-
-.control-panel .first,
-.control-panel .second {
+.control-panel__inner .first,
+.control-panel__inner .second {
     /*margin-block: 5px;*/
     margin-bottom: 5px;
     margin-right: 5px;
 }
 
-.control-panel [class="check-buttons"] {
+.control-panel__inner [class="check-buttons"] {
     width: 300px;
     display: flex;
     justify-content: space-around;
@@ -77,10 +93,20 @@ body {
     transform: rotate(270deg)
 }
 
-[type="button"],
-[type="text"]{
+.second{
     border: 1px solid grey;
     border-radius: 10px;
+    background: linear-gradient(#ffffff, #ffffff);
+}
+
+
+[type="password"] {
+    background-color: #fcfdff;
+    background-image: linear-gradient(315deg, #eeeeee 0%, #dce8ef 74%);
+
+}
+.control-panel{
+    background: linear-gradient(#d3d3d3, #2d3436);
 }
 
 [type="checkbox"] {
@@ -95,6 +121,12 @@ body {
     outline: none;
     cursor: pointer;
 }
+
 [type="checkbox"]:checked {
     background: grey;
+}
+
+.control-panel__inner {
+    border: 8px solid;
+    border-image: repeating-linear-gradient(45deg, #ffe741, #146b43 10px, #000000 10px, #10722c 20px) 20;
 }
