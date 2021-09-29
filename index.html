@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Open Space</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div class="space">
     <div class="planet-area">
-        <img class="planet" src="mars.png" alt="rocket">
-        <img class="rocket" src="rocket.png" alt="rocket"/>
+        <img class="planet" src="mars.png" alt="rocket" />
+        <img class="rocket" src="rocket.png" alt="rocket" />
     </div>
     <div class="control-panel">
         <div class="control-panel__inner">
-            <input type="password" id="panel-unlock" name="panel-unlock" class="first"
-                   placeholder="  Enter  password to unlock">
-            <input type="button" class="second" value="ok">
-            <!--            </label>-->
-            <!--        </form>-->
+            <input
+                    type="password"
+                    id="panel-unlock"
+                    name="panel-unlock"
+                    class="first pass-fields"
+                    placeholder="  Enter  password to unlock"
+            />
+            <input type="button" class="second pass-fields" value="ok" />
             <div class="check-buttons">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
+                <input type="checkbox" />
             </div>
             <div class="levers">
-                <input type="range">
-                <input type="range">
-                <input type="range">
-                <input type="range">
-                <input type="range">
+                <input type="range" />
+                <input type="range" />
+                <input type="range" />
+                <input type="range" />
+                <input type="range" />
             </div>
-            <input type="button" value="Launch"/>
+            <input type="button" value="Launch" id="launchButton" class="activeButton"/>
         </div>
     </div>
 </div>

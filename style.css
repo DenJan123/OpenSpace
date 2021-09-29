@@ -25,15 +25,6 @@ body {
     z-index: 3;
 }
 
-.rocket {
-    width: 150px;
-    position: relative;
-    right: 300px;
-    bottom: 270px;
-    transform: rotate(25deg);
-    z-index: 2;
-}
-
 .control-panel__inner {
     position: absolute;
     right:120px;
@@ -65,14 +56,13 @@ body {
     color: #ffffff;
     border-radius: 10px;
 }
-[value="Launch"]:hover {
+.activeButton:hover {
     background: #c0392b;
     color: #ffffff;
 }
 
 .control-panel__inner .first,
 .control-panel__inner .second {
-    /*margin-block: 5px;*/
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -123,10 +113,25 @@ body {
 }
 
 [type="checkbox"]:checked {
-    background: grey;
+    background: #ffe741;
 }
 
 .control-panel__inner {
     border: 8px solid;
     border-image: repeating-linear-gradient(45deg, #ffe741, #146b43 10px, #000000 10px, #10722c 20px) 20;
+}
+
+.rocket {
+    width: 150px;
+    position: relative;
+    right: 300px;
+    bottom: 270px;
+    transform: rotate(25deg);
+    z-index: 2;
+    transition: all 4s ease;
+}
+
+.rocketLaunch {
+    right: 10px;
+    bottom: 1000px;
 }
